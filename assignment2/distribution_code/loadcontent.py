@@ -4,7 +4,7 @@ import json
 
 def to_json():
     """
-    Write Content.existing_content using json into dump.txt
+    Write Content.existing_content using json into dump.json
     for retrieval later.
     """
     # A list of all the content objects serialized into dictionaries
@@ -45,7 +45,7 @@ def to_json():
 
         all_content_dicts.append(d)
 
-    dump_file = open('dump.txt', 'w')
+    dump_file = open('dump.json', 'w')
 
     # list of dictionaries gets turned into JSON here
     json_string = json.dumps(all_content_dicts)
@@ -55,9 +55,9 @@ def to_json():
 
 def from_json():
     """
-    Load all content from dump.txt into Content.existing_content
+    Load all content from dump.json into Content.existing_content
     """
-    dump_file = open('dump.txt', 'r')
+    dump_file = open('dump.json', 'r')
 
     # read JSON string from dump_file
     json_string = dump_file.read()
@@ -66,7 +66,7 @@ def from_json():
     # parse the JSON string into a list of dictionaries
     all_content_dicts = json.loads(json_string)
 
-    # loop over list
+    # loop over listt
     for d in all_content_dicts:
         if d['type'] == 'Article':
             # this automatically adds the Article or Picture to
