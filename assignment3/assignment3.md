@@ -70,7 +70,7 @@ Quit the server with CONTROL-C.
 
 You’ve started the Django development server, a lightweight Web server written purely in Python so you don't have to mess with fancy stuff like Apache.
 
-It totally works, too! [Don't believe me? Just watch](https://www.youtube.com/watch?v=OPf0YbXqDm0&feature=youtu.be&t=65): you can navigate to [http://localhost:8000/](http://localhost:8000/) via your favorite web browser. You should now see a spiffy message!
+It totally works, too! [Don't believe me? Just watch](https://www.youtube.com/watch?v=OPf0YbXqDm0&feature=youtu.be&t=65): you can navigate to [c](http://localhost:8000/) via your favorite web browser. You should now see a spiffy message!
 
 Now to set up the database...
 
